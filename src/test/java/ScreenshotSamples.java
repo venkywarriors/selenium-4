@@ -82,6 +82,8 @@ public class ScreenshotSamples {
 
 // full page Screenshot in firefox
     void captureFullPageShot(WebDriver driver){
+        // ((ChromeDriver)driver).getFullPageScreenshotAs(OuputType.FILE);
+
         File newImg = ((FirefoxDriver) driver).getFullPageScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(newImg, new File("./screenshot/FullPageShot.jpg"));
