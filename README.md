@@ -32,6 +32,7 @@ With Selenium 4, they have updated all the official documents related to Seleniu
 ```
 import java.time.Duration;
 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+driver.manage().window().fullscreen();
 
 driver.switchTo().parentFrame() is generally used to switch the control back to the parent frame.
 
