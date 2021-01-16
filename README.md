@@ -1,4 +1,4 @@
-# Selenium 4
+# Selenium :heavy_check_mark: 4
 ![alt text](https://github.com/venkywarriors/selenium-4/blob/main/selenium-04.jpg ":mag_right: Keep Exploring :mag:")
 
 ## Important Architecture Related Changes
@@ -25,6 +25,10 @@ With Selenium 4, they have updated all the official documents related to Seleniu
 4) ***Improvement in Selenium 4 IDE:*** Selenium IDE is a record and playback tool that is used for user interaction with the browser, and the new version of IDE is available with more features
 
 5) ***Better Monitoring:*** Logging and request tracing process are now improved to make a better grip on the debugging process for automation engineers as it is not limited to DevOps only.
+
+:clipboard: [Selenium 4 Architecture Introduction](https://github.com/venkywarriors/selenium-4/blob/main/Selenium%20WebDriver%204.pdf)
+
+:pencil2: [Same programs](https://github.com/venkywarriors/selenium-4/tree/main/src/test/java)
 ```
 import java.time.Duration;
 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
