@@ -80,7 +80,7 @@ public class ScreenshotSamples {
         }
     }
 
-
+// full page Screenshot in firefox
     void captureFullPageShot(WebDriver driver){
         File newImg = ((FirefoxDriver) driver).getFullPageScreenshotAs(OutputType.FILE);
         try {
