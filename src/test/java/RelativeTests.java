@@ -10,19 +10,29 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class RelativeTests {
 
   @Test
-  public  void X(){
+  public  void RelativeLocators(){
 
     WebDriverManager.chromedriver().setup();
 
     WebDriver driver = new ChromeDriver();
-    driver.navigate().to("https://www.swtestacademy.com");
+     driver.get("https://applitools.com/blog/category/advanced-topics/");
 
-    WebElement logo = driver.findElement(withTagName("article").toRightOf(By.id("blog-1-post-8383")));
-    System.out.println(logo.findElement(By.cssSelector(".entry-title")).getText());
+        WebElement post1 = driver.findElement(By.id("post-22539"));
+        String post4 = driver.findElement( withTagName("article").below(post1)).getText();
+        System.out.println(" Below post 1 is : "+ post4);
 
+        WebElement post5 = driver.findElement(By.id("post-22033"));
+        //post 2 is above post 5
+        String post2 = driver.findElement( withTagName("article").above(post5)).getText();
+        System.out.println(" Above of post 5 is : "+ post2);
 
-    logo = driver.findElement(withTagName("article").below(By.id("blog-1-post-8405")));
-    System.out.println(logo.findElement(By.cssSelector(".entry-title")).getText());
+        // post 4 is on the left of post 5
+        post4 = driver.findElement( withTagName("article").toLeftOf(post5)).getText();
+        System.out.println(" Left of post 5 is : "+ post4);
+
+        // post 6 is on the right of post 5
+        String post6 = driver.findElement( withTagName("article").toRightOf(post5)).getText();
+        System.out.println(" Right of post 5 is : "+ post6);
   }
 
 }
