@@ -24,3 +24,7 @@ With Selenium 4, they have updated all the official documents related to Seleniu
 * 4) Improvement in Selenium 4 IDE: Selenium IDE is a record and playback tool that is used for user interaction with the browser, and the new version of IDE is available with more features
 
 * 5) Better Monitoring: Logging and request tracing process are now improved to make a better grip on the debugging process for automation engineers as it is not limited to DevOps only.
+
+driver.switchTo().parentFrame() is generally used to switch the control back to the parent frame.
+
+When you deal with pop-up dialog windows within your webpage, then driver.switchTo().defaultContent() is used to switch the control back to default content in the window.
