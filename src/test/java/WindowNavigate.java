@@ -13,6 +13,8 @@ public class WindowNavigate {
 
     WebDriver driver = new ChromeDriver();
     driver.navigate().to("https://www.google.com");
+    // Run in full screen
+    driver.manage().window().fullscreen();
     driver.switchTo().newWindow(WindowType.TAB);
     driver.navigate().to("https://www.swtestacademy.com");
   }
@@ -24,6 +26,8 @@ public class WindowNavigate {
 
     WebDriver driver = new ChromeDriver();
     driver.navigate().to("https://www.google.com");
+     // Minimize the browser
+     driver.manage().window().minimize();
     driver.switchTo().newWindow(WindowType.WINDOW);
     driver.navigate().to("https://www.swtestacademy.com");
   }
