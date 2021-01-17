@@ -28,7 +28,7 @@ With Selenium 4, they have updated all the official documents related to Seleniu
 
 :clipboard: [Selenium 4 Architecture Introduction](https://github.com/venkywarriors/selenium-4/blob/main/Selenium%20WebDriver%204.pdf)
 
-:pencil2: [Same programs](https://github.com/venkywarriors/selenium-4/tree/main/src/test/java)
+:pencil2: [Click here for view Same programs](https://github.com/venkywarriors/selenium-4/tree/main/src/test/java)
 ```
 import java.time.Duration;
 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
