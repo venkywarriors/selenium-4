@@ -11,9 +11,9 @@ Selenium 4 has come up with new architecture to remove the issues which occurred
 
 Let’s understand in brief about the Selenium Grid, which contains two major components:
 
-***Node:*** It is used to execute tests on individual computer systems. There can be multiple nodes in a grid.
+   ***Node:*** It is used to execute tests on individual computer systems. There can be multiple nodes in a grid.
 
-***Hub:*** It is the central point from where it controls all the machines present in the network, and it contains only one hub which helps in allocating test execution to different nodes.
+   ***Hub:*** It is the central point from where it controls all the machines present in the network, and it contains only one hub which helps in allocating test execution to different nodes.
 But in Selenium 4, Grid is very flexible. It allows us to test the cases against multiple browsers, browsers of different versions, and also on different Operating systems. Even now, there is no need for a setup to start hub and nodes individually once the user starts the server, the Grid automatically works as both nodes and hub.
 
 It also supports advanced tools like Docker, AWS, Azure, and much more, useful in the DevOps process. Now Grid has a more user-friendly UI and contains relevant information related to the session, running, capacity, etc.
@@ -28,7 +28,7 @@ With Selenium 4, they have updated all the official documents related to Seleniu
 
 :clipboard: [Selenium 4 Architecture Introduction](https://github.com/venkywarriors/selenium-4/blob/main/Selenium%20WebDriver%204.pdf)
 
-:pencil2: [Click here for view Same programs](https://github.com/venkywarriors/selenium-4/tree/main/src/test/java)
+:pencil2: [Click Here To View Same Programs](https://github.com/venkywarriors/selenium-4/tree/main/src/test/java)
 ```
 import java.time.Duration;
 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
